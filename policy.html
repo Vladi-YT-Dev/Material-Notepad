@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Material Notepad</title>
+    <link rel="icon" type="image/png" href="./src/assets/images/favicon_1780937521165.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      code, pre {
+        font-family: 'JetBrains Mono', monospace;
+      }
+    </style>
+  </head>
+  <body class="bg-[#fcf8f2] text-[#1f1b16] dark:bg-[#1f1b16] dark:text-[#eae1d9] transition-colors duration-200">
+    <!-- Main content container -->
+    <div class="max-w-3xl mx-auto px-6 py-12 md:py-20">
+      
+      <!-- Go Back Header -->
+      <header class="mb-12 flex items-center justify-between">
+        <a href="index.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#6d5e4f] dark:text-[#cca580] hover:opacity-85 transition-opacity">
+          <!-- Back Chevron -->
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Material Notepad
+        </a>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-[#a08e7e] font-mono">
+          Last Updated: June 2026
+        </span>
+      </header>
+
+      <!-- Title Section -->
+      <main class="space-y-10">
+        <section class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-2xl bg-[#eccca9] dark:bg-[#524435] flex items-center justify-center p-1 shadow-sm">
+              <img src="./src/assets/images/favicon_1780937521165.png" alt="Material Notepad Logo" class="w-8 h-8 object-contain" />
+            </div>
+            <h1 class="text-3xl font-extrabold tracking-tight text-[#2d1600] dark:text-[#ffddbc]">
+              Privacy Policy
+            </h1>
+          </div>
+          <p class="text-sm text-[#524435] dark:text-[#d3c2b1] leading-relaxed">
+            Your privacy is of stellar importance to us. This statement explains how <strong>Material Notepad</strong> manages, respects, and secures your information during use of the application, including integrations with Google API services.
+          </p>
+        </section>
+
+        <hr class="border-[#eddccb] dark:border-[#3d3329]" />
+
+        <!-- Quick Summary Section -->
+        <section class="bg-[#f0e4d7] dark:bg-[#342a20] rounded-3xl p-6 border border-[#dfcebd] dark:border-[#4d3f32] space-y-3">
+          <h2 class="text-sm font-bold text-[#3d2700] dark:text-[#ffb976] uppercase tracking-wider font-mono">
+            At a Glance (TL;DR)
+          </h2>
+          <ul class="text-xs text-[#524435] dark:text-[#d3c2b1] space-y-2.5 list-disc pl-5">
+            <li><strong>No External Personal Database:</strong> All your notes are stored directly on your own device (client-side LocalStorage) or synced to your own Google Drive. We own no servers that store your note contents.</li>
+            <li><strong>Secure API Integration:</strong> Connections to Google Drive happen directly from your browser to Google APIS. There is no middleman backend collecting your details.</li>
+            <li><strong>You Are in Control:</strong> You can disconnect and remove Google permissions at any time with a single click.</li>
+          </ul>
+        </section>
+
+        <!-- Detailed Policy -->
+        <div class="space-y-8 text-xs text-[#524435] dark:text-[#c4b3a2] leading-relaxed">
+          
+          <!-- Sec 1 -->
+          <section class="space-y-2.5">
+            <h3 class="text-base font-bold text-[#201a14] dark:text-[#ffddbc]">
+              1. Information We Collect and Access
+            </h3>
+            <p>
+              Material Notepad operates as a decentralized, offline-first Markdown text editor. It does not load, register, or upload personal folders or note documents onto third-party backend databases.
+            </p>
+            <p>
+              When you opt-in to link your Google Workspace Drive Account, we request and utilize the following authentication permissions:
+            </p>
+            <ul class="list-disc pl-5 space-y-1 bg-[#faf5ee] dark:bg-[#25201b] p-3 rounded-2xl border border-[#ebe0d4] dark:border-[#352f28]">
+              <li>
+                <strong>https://www.googleapis.com/auth/drive.file:</strong> Allows the application to create and modify only the specific files (.txt or Markdown notes) you explicitly choose to create, open, or save with this app. We cannot read or manipulate any other files on your Google Drive.
+              </li>
+              <li>
+                <strong>https://www.googleapis.com/auth/userinfo.profile:</strong> Grants temporary client-side access to read your profile name and avatar image URL, purely to render a warm, customized profile view in the applet's user interface.
+              </li>
+              <li>
+                <strong>https://www.googleapis.com/auth/userinfo.email:</strong> Grants client-side access to view your primary email address to show which active session is signed in.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Sec 2 -->
+          <section class="space-y-2.5">
+            <h3 class="text-base font-bold text-[#201a14] dark:text-[#ffddbc]">
+              2. How Your Data is Used
+            </h3>
+            <p>
+              Any information retrieved or stored falls strictly under the following purposes:
+            </p>
+            <p class="font-semibold text-[#201a14] dark:text-[#eae1d9]">
+              We NEVER sell, trade, monitor, share, or analyze any notes or profile data with advertisers, third-party trackers, or machine learning algorithms.
+            </p>
+            <ul class="list-decimal pl-5 space-y-1">
+              <li><strong>Local Persistence:</strong> Notes are compiled locally inside your browser's LocalStorage to allow quick offline notes retrieval and immediate edits.</li>
+              <li><strong>On-Demand Syncing:</strong> Note uploads/downloads only run when you explicitly click sync. All storage transactions use direct, secure TLS encrypted channels between your home browser and Google Cloud servers.</li>
+            </ul>
+          </section>
+
+          <!-- Sec 3 -->
+          <section class="space-y-2.5">
+            <h3 class="text-base font-bold text-[#201a14] dark:text-[#ffddbc]">
+              3. Data Retention and Deletion
+            </h3>
+            <p>
+              Because your notes live purely inside your device's browser and your owned Google Drive:
+            </p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li><strong>Offline Browser Deletion:</strong> You can completely scrub all locally persisted notes and credentials on your desktop by clearing your browser cache/cookies or clicking "Reset All Notes" in the app menu.</li>
+              <li><strong>Google Drive Removal:</strong> You can permanently delete the notepad documents from Google Drive at any time, or disconnect Google integration by clicking "Disconnect Google Account" in our Settings panel. You can also revoke access permanently through your Google Account Settings portal.</li>
+            </ul>
+          </section>
+
+          <!-- Sec 4 -->
+          <section class="space-y-2.5">
+            <h3 class="text-base font-bold text-[#201a14] dark:text-[#ffddbc]">
+              4. Contact & Developer Details
+            </h3>
+            <p>
+              For any questions regarding this Privacy Policy or Material Notepad's open-source architecture, you are welcome to contact the developer or open an issue directly on the official code repository:
+            </p>
+            <p class="font-semibold text-[#6d5e4f] dark:text-[#cca580]">
+              GitHub Repository: <a href="https://github.com/Vladi-YT-Dev/Material-Notepad" target="_blank" rel="noopener noreferrer" class="underline">https://github.com/Vladi-YT-Dev/Material-Notepad</a><br />
+              Email: vll201404@gmail.com
+            </p>
+          </section>
+
+        </div>
+      </main>
+
+      <footer class="mt-16 pt-8 border-t border-[#eddccb] dark:border-[#3d3329] text-center text-[10px] text-[#a08e7e]">
+        &copy; 2026 Material Notepad. Created under standard MIT open-source license.
+      </footer>
+
+    </div>
+  </body>
+</html>
